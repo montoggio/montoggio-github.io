@@ -3,3 +3,43 @@
 .container
   max-width: 1170px
   margin: auto
+@media (max-width: 1199px)
+  .container
+    max-width: 960px
+@media (max-width: 991px)
+  html
+    font-size: 7px
+  .container
+    max-width: 750px
+    // padding: 0 30px
+  .navbar__mobile
+    display: none
+  .hero
+    background-size: 100%
+    background-position: top right
+@media (max-width: 780px)
+  html
+    // font-size: 3px
+  .navbar__lendline
+    display: none
+  .container
+    width: 100%
+    padding: 0 20px
+  .menu
+    z-index: 1
+    // height: 50%
+    &__nav
+      flex-direction: column
+      // align-items: space-around
+      // height: 100%
+    &__link
+      // display: block
+      padding: 2rem 0
+      font-size: 2rem
+    .hero
+    padding: 10rem 0 15rem 0
+@media (max-width: 576px)
+  .logo
+    display: none
+  .button-o
+    font-size: 1.8rem
